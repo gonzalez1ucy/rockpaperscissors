@@ -4,7 +4,9 @@
 
 //GLOBAL VARIABLES
 /* global $ */
-
+$("button").click(function(){
+    $("#input").text("mam") 
+});
 
 
 // DOCUMENT READY FUNCTION BELOW
