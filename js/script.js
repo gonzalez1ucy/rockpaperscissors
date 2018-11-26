@@ -11,9 +11,20 @@ var userChoice= "";
 var randomnumber=0;
 $("#shoot").click(function(){
   userChoice = $("#input").val();
-    $("#userchoice").text(userChoice);
-    
+    $("#userChoice").text(userChoice);
+    randomnumber = Math.random();
+    if (randomnumber <.33 ){
+    computerChoice= "rock";
+    } else if (randomnumber >.66){
+    computerChoice ="paper";
+    } else {
+          computerChoice = "scissors";
+   }
+       $("#computerChoice").text(computerChoice);
+  if (computerChoice==="rock" && userChoice==="paper")
+  $("#result").text("userchoice Wins!")
 });
+ 
 
 
 
